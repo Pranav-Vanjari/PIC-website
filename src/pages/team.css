@@ -1,0 +1,75 @@
+.team-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 5%;
+  color: white;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.team-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  text-align: center;
+}
+
+/* Section container */
+.team-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.team-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  color: white;
+  text-align: center;
+}
+
+/* 🔹 Grid for Team Members */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  justify-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* 🔸 Grid for Head & Co-Head */
+.head-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px; /* space between the two cards */
+  flex-wrap: wrap; /* ensures it wraps on smaller screens */
+  width: 100%;
+}
+
+/* 📱 Mobile: 2 per row */
+@media (max-width: 768px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .head-grid {
+    gap: 30px;
+  }
+
+  .team-title {
+    font-size: 2rem;
+  }
+
+  .team-section h2 {
+    font-size: 1.5rem;
+  }
+}

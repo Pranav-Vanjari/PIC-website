@@ -1,0 +1,79 @@
+.events-page {
+  padding: 60px 5%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.events-title {
+  font-family: cursive;
+  text-align: center;
+}
+
+/* Grid of event cards */
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  width: 100%;
+}
+
+.event-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+  transform: scale(1.03);
+}
+
+.event-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.event-card h2 {
+  font-size: 1.2rem;
+  margin: 15px 0 10px 0;
+}
+
+.event-card p {
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+/* No events placeholder */
+.no-events {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 40px;
+  text-align: center;
+  max-width: 600px;
+}
+
+.no-events h2 {
+  margin-bottom: 10px;
+  font-family: cursive;
+}
+
+.no-events p {
+  opacity: 0.8;
+  font-size: 0.95rem;
+}
+
+/* 📱 Mobile */
+@media (max-width: 600px) {
+  .event-card img {
+    height: 180px;
+  }
+}

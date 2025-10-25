@@ -1,0 +1,77 @@
+.team-card {
+  position: relative;
+  width: 250px;
+  height: 320px;
+  border: 3px solid gold;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+  transition: all 0.4s ease;
+}
+
+/* Member image fills the card */
+.member-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.4s ease;
+}
+
+/* Overlay for name + role */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.65);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.overlay h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.overlay p {
+  margin: 5px 0 0;
+  font-size: 1rem;
+}
+
+/* Hover effects */
+.team-card:hover .overlay {
+  opacity: 1;
+}
+
+.team-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(255, 215, 0, 0.6);
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.team-card:hover .member-img {
+  filter: brightness(70%);
+}
+
+/* 📱 Mobile adjustments */
+@media (max-width: 480px) {
+  .team-card {
+    width: 160px;
+    height: 220px;
+  }
+
+  .overlay h3 {
+    font-size: 1rem;
+  }
+
+  .overlay p {
+    font-size: 0.85rem;
+  }
+}

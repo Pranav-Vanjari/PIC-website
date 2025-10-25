@@ -1,0 +1,72 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.about-us{
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px); /* controls background blur */
+  -webkit-backdrop-filter: blur(10px); /* for Safari */
+
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 50px;
+
+  border-radius: 20px;
+
+}
+
+.about-us p{
+    text-align: center;
+    font-size: 1rem;
+}
+
+.about-us h1{
+    text-align: center;
+}
+
+.highlights {
+  margin: 10px;
+  overflow: hidden;
+}
+
+.scroll-track {
+  display: flex;
+  gap: 20px;
+  width: max-content; /* ensures full width for animation */
+  animation: scroll 25s linear infinite; /* faster by default */
+}
+
+.scroll-track img {
+  height: 300px;
+  border: 5px solid black;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.scroll-track img:hover {
+  transform: scale(1.05);
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* 📱 Mobile Optimized */
+@media (max-width: 480px) {
+  .scroll-track {
+    animation: scroll 15s linear infinite; /* 🔥 faster motion for mobile */
+    gap: 15px;
+  }
+
+  .scroll-track img {
+    height: 160px;
+    padding: 10px;
+  }
+}
