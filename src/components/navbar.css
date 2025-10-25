@@ -40,11 +40,37 @@
   text-decoration: none;
   font-size: 1rem;
   font-family: cursive;
+  position: relative; /* ✅ ensures underline only under link */
   transition: opacity 0.3s ease;
 }
 
 .navbar-right a:hover {
   opacity: 0.8;
+}
+
+/* 🔹 Active link underline */
+.navbar-right a.active-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background-color: gold;
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+/* 🔹 Hover underline (only under hovered link) */
+.navbar-right a:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background-color: gold;
+  border-radius: 2px;
 }
 
 /* ===== 📱 Mobile View ===== */
