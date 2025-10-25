@@ -4,7 +4,7 @@ import BG from "./pages/bg";
 import NavBar from "./components/navbar";
 import Home from "./pages/home";
 import Footer from "./components/footer";
-import Event from "./pages/Event";
+import Event from "./pages/event";
 import Team from "./pages/team";
 import Contact from "./pages/contact";
 import ScrollToTop from "./components/scroll";
