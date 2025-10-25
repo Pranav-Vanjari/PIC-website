@@ -37,7 +37,7 @@ function Team() {
 
       {/* TEAM MEMBERS SECTION */}
       <section className="team-section">
-        <h2>Team Members</h2>
+        <h2>Our Club's leads and co-leads</h2>
         <div className="team-grid">
           {teamMembers.map((person, index) => (
             <TeamCard key={index} {...person} />
