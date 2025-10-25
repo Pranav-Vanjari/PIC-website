@@ -10,7 +10,7 @@ function Home(){
             </div>
 
             <div className="about-us highlights">
-                <h1>highlights gallary</h1>
+                <h1>Highlights</h1>
 
 
                 <div className="scroll-track">

@@ -9,7 +9,7 @@
   justify-content: space-between;
   align-items: center;
   width: 90%;
-  height: 60px;
+  height: 80px;
   border-radius: 10px;
   padding: 0 5%;
   background: rgba(255, 255, 255, 0.155);
@@ -22,7 +22,7 @@
 
 .navbar-left h1 {
   font-family: cursive;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   margin: 0;
   cursor: pointer;
   color: white;
@@ -38,7 +38,7 @@
 .navbar-right a {
   color: white;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-family: cursive;
   position: relative; /* ✅ ensures underline only under link */
   transition: opacity 0.3s ease;
